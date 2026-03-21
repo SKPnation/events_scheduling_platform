@@ -1,0 +1,77 @@
+/* =========================
+   ROOT VARIABLES (GLOBAL)
+   ========================= */
+
+:root {
+  /* ===== COLORS ===== */
+  --bg: #0f172a;            /* Main background */
+  --panel: #1e293b;         /* Cards / panels */
+  --text: #e2e8f0;          /* Primary text */
+  --text-muted: #94a3b8;    /* Secondary text */
+
+  --accent: #22c55e;        /* Primary brand color (green) */
+  --accent-hover: #16a34a;  /* Hover state */
+
+  --danger: #ef4444;        /* Error / destructive */
+  --warning: #f59e0b;       /* Warning */
+  --success: #10b981;       /* Success */
+
+  --border: #334155;        /* Borders */
+
+  /* ===== SPACING ===== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* ===== RADIUS ===== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-medium: 0.25s ease-in-out;
+  --transition-slow: 0.4s ease-in-out;
+}
+
+
+/* =========================
+   LIGHT MODE (OPTIONAL)
+   ========================= */
+
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --text-muted: #64748b;
+
+  --accent: #16a34a;
+  --accent-hover: #15803d;
+
+  --border: #e2e8f0;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
