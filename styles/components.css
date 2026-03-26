@@ -1,3 +1,5 @@
+/* ================= PILL ================= */
+
 .pill {
   display: inline-flex;
   align-items: center;
@@ -15,6 +17,8 @@
   color: var(--text);
   font-weight: 600;
 }
+
+/* ================= BUTTON ================= */
 
 .btn {
   display: inline-flex;
@@ -36,12 +40,20 @@
 }
 
 .btn.primary {
-  background: linear-gradient(180deg, rgba(56, 189, 248, 0.25), rgba(16, 26, 46, 0.85));
+  background: linear-gradient(
+    180deg,
+    rgba(56, 189, 248, 0.25),
+    rgba(16, 26, 46, 0.85)
+  );
   border-color: rgba(56, 189, 248, 0.55);
 }
 
 .btn.danger {
-  background: linear-gradient(180deg, rgba(251, 113, 133, 0.2), rgba(16, 26, 46, 0.85));
+  background: linear-gradient(
+    180deg,
+    rgba(251, 113, 133, 0.2),
+    rgba(16, 26, 46, 0.85)
+  );
   border-color: rgba(251, 113, 133, 0.55);
 }
 
@@ -50,6 +62,8 @@
   border-radius: 10px;
   font-size: 12px;
 }
+
+/* ================= CARD ================= */
 
 .card {
   background: rgba(16, 26, 46, 0.75);
@@ -84,6 +98,8 @@
   padding: 16px;
 }
 
+/* ================= CHIPS ================= */
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -106,6 +122,8 @@
   background: rgba(56, 189, 248, 0.12);
 }
 
+/* ================= TABS ================= */
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -127,6 +145,8 @@
   border-color: rgba(74, 222, 128, 0.6);
   background: rgba(74, 222, 128, 0.12);
 }
+
+/* ================= TABLE ================= */
 
 .table {
   width: 100%;
@@ -154,6 +174,8 @@
 .table tr:last-child td {
   border-bottom: 0;
 }
+
+/* ================= BADGE ================= */
 
 .badge {
   display: inline-flex;
@@ -186,6 +208,8 @@
   color: #ffe2e8;
 }
 
+/* ================= PANEL ================= */
+
 .panel {
   padding: 14px;
   border-radius: 18px;
@@ -205,10 +229,9 @@
   line-height: 1.35;
 }
 
+/* ================= TOAST (APPEARANCE ONLY) ================= */
+
 .toast {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
   max-width: 360px;
   padding: 12px 14px;
   border-radius: 16px;
@@ -216,7 +239,6 @@
   background: rgba(16, 26, 46, 0.92);
   box-shadow: var(--shadow);
   display: none;
-  z-index: 50;
 }
 
 .toast.show {

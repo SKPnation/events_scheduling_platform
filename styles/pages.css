@@ -1,13 +1,15 @@
+/* ================= KPI ================= */
+
 .kpi {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-top: 12px;
+  gap: var(--gap);
+  margin-top: var(--gap);
 }
 
 .kpi .box {
-  padding: 14px;
-  border-radius: 18px;
+  padding: var(--gap);
+  border-radius: var(--radius2);
   background: rgba(15, 23, 42, 0.7);
   border: 1px solid rgba(36, 50, 79, 0.8);
 }
@@ -23,6 +25,7 @@
   margin-top: 8px;
   font-size: 22px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .kpi .box .sub {
@@ -31,19 +34,23 @@
   color: var(--muted);
 }
 
+/* ================= CALENDAR ================= */
+
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  margin-top: 12px;
+  margin-top: var(--gap);
 }
 
 .day {
   padding: 10px;
-  border-radius: 16px;
+  border-radius: var(--radius);
   border: 1px solid rgba(36, 50, 79, 0.75);
   background: rgba(15, 23, 42, 0.55);
   min-height: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
 .day h4 {
@@ -52,6 +59,8 @@
   color: var(--muted);
   font-weight: 600;
 }
+
+/* ================= EVENTS ================= */
 
 .slot {
   display: flex;
@@ -72,12 +81,15 @@
   display: block;
   font-weight: 700;
   margin-bottom: 4px;
+  color: var(--text);
 }
 
 .event .meta {
   color: var(--muted);
   font-size: 11px;
 }
+
+/* ================= EVENT STATES ================= */
 
 .event.ok {
   border-color: rgba(52, 211, 153, 0.5);
@@ -93,6 +105,8 @@
   border-color: rgba(251, 113, 133, 0.55);
   background: rgba(251, 113, 133, 0.1);
 }
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 980px) {
   .kpi {
